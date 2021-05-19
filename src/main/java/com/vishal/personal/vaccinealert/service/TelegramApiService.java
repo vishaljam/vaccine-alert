@@ -6,7 +6,7 @@ import retrofit2.http.Query;
 
 public interface TelegramApiService {
 
-    @GET("/bot1812306918:AAFeaEyUmShGhVDXlc3G5aecrQpvmz5SwhA/sendMessage")
+    @GET("/botBOT_API_KEY/sendMessage")
     Call<Object> sendMessageToTelegramChannel(@Query("chat_id") String chatId,
                                               @Query("text") String text
     );
